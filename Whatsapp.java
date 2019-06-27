@@ -9,21 +9,21 @@ import java.net.ProtocolException;
 import java.net.URL;
 
 public class Whatsapp {
-  // Reemplaza los siguientes datos con tu información
+  // Reemplaza los siguientes datos con tu informaciÃ³n
   private static final String ID_CLIENTE = ""; // TU ID DE CLIENTE
   private static final String CLIENT_SECRET = ""; //TU CLAVE SECRETA DE CLIENTE WHATSAPP
   private static final String URL_GATEWAY = ""; // TU HOST QUE HARA COMO GATEWAY
 
   public static void main(String[] args) throws Exception {
-    String numero = "34689510169";  // Número telefónico del destinatario, junto con su código de pais
+    String numero = "000000";  // NÃºmero telefÃ³nico del destinatario, junto con su cÃ³digo de pais
     String mensaje = "Hola"; // Mensaje deseado
-    //LLAMADA AL MÉTODO ENCARGADO DE ENVIAR EL MENSAJE
+    //LLAMADA AL MÃ‰TODO ENCARGADO DE ENVIAR EL MENSAJE
     envio(numero, mensaje);
   }
   
   public static void envio(String numero, String mensaje) {
 
-    String payload="{ Número: " + numero + " | Mensaje: " + mensaje;
+    String payload="{ NÃºmero: " + numero + " | Mensaje: " + mensaje;
 
     try {
 	    URL url = new URL(URL_GATEWAY);
