@@ -1,12 +1,7 @@
 package Pruebas;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.ProtocolException;
-import java.net.URL;
+import java.io.*;
+import java.net.*;
 
 public class Whatsapp {
   // Reemplaza los siguientes datos con tu información
