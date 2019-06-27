@@ -22,8 +22,7 @@ public class Whatsapp {
 
     try {
 	    URL url = new URL(URL_GATEWAY);
-	    HttpURLConnection conectividad= (HttpURLConnection) url.openConnection();
-	    HttpURLConnection conex = conectividad;
+	    HttpURLConnection conex = (HttpURLConnection) url.openConnection();
 	    Post(conex);
 	    OutputStream output = conex.getOutputStream();
 	    output.write(payload.getBytes());
